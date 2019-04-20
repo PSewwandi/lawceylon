@@ -1,0 +1,213 @@
+/* Optional: Makes the sample page fill the window. 
+     html, body {
+       height: 100%;
+       margin: 0;
+       padding: 0;
+
+     }*/
+
+     * {
+        box-sizing: border-box;
+    }
+    
+    
+    /* Style the side navigation */
+    .mapsidenav {
+        height: 100%;
+        width: 220px;
+        position: fixed;
+        z-index: 1;
+        top: 98;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        border-top-right-radius:20px;
+    }
+    
+    
+    /* Side navigation links */
+    .mapsidenav a {
+        color: white;
+        padding: 8px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color on hover */
+    .mapsidenav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    /* Style the content 
+    .content {
+        margin-left: 200px;
+        padding-left: 20px;
+    }*/
+    
+    #mymap {
+    
+        width:990px;
+       height:700px;
+       position: auto;
+       top: 10px;
+    
+    }
+    
+    .button {
+        background-color: #4CAF50; /* Green */
+    
+        border:  2px solid #00FA9A;
+        color: white;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 150px;
+        cursor: pointer;
+        position: absolute;
+    
+    
+    }
+    .button {border-radius: 12px;}
+    
+    .button1{
+      background-color: #4CAF50; /* Green */
+    
+      border:  1px solid #00FA9A;
+      color: white;
+      padding: 7px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+     margin: 10px 150px;
+      cursor: pointer;
+      position: absolute;
+    
+    }
+    .button1 {border-radius: 12px;}
+    
+    .d{
+        width:700px;
+        margin: auto;
+       background-color: #FFFFFF;
+       position: relative;
+    
+    }
+    
+    .dropbtn {
+        background-color: #00FA9A;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        cursor: -webkit-grab; cursor: grab;
+        border-radius: 5px 5px 5px 5px;
+    }
+    
+    
+    
+    .show {display: block;}
+    
+    
+    
+    .mapcontainer {
+        display: block;
+        position: relative;
+        padding-left: 150px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    /* Hide the browser's default radio button */
+    .mapcontainer input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    /* Create a custom radio button */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color:#eee;
+         border-color: #ADFF2F;
+        border-radius: 50%;
+    }
+    
+    /* On mouse-over, add a grey background color */
+    .mapcontainer:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    
+    /* When the radio button is checked, add a blue background */
+    .mapcontainer input:checked ~ .checkmark {
+        background-color: #2196F3;
+    }
+    
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    
+    }
+    
+    /* Show the indicator (dot/circle) when checked */
+    .mapcontainer input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    /* Style the indicator (dot/circle) */
+    .mapcontainer .checkmark:after {
+         top: 9px;
+        left: 9px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: white;
+    }
+    
+    
+    /*font style for all pages except sidenav*/
+    @font-face {
+        font-family: myFirstFont;
+        src: url(sansation_light.woff);
+    }
+    
+    
+    
+    .body {
+        padding-top: 30px;
+    } 
+    .product {
+        margin-bottom: 30px;
+    }
+    .product-inner {
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+        padding: 10px;
+    }
+    .product img {
+        margin-bottom: 10px;
+    }
+    .lawyercontainer{
+        position:static;
+    
+    }
+    .form-controls{
+        background-color: #1E90FF;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }

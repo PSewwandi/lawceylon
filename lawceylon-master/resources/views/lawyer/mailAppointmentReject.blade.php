@@ -1,0 +1,1 @@
+This is to inform <strong><big>{{$details->honorific." ".$details->name." ".$details->lastname}}</big></strong> has rejected the {{$details->title}} appointment

@@ -1,0 +1,1 @@
+This is to inform <strong><big>{{$details->honorific." ".$details->name." ".$details->lastname}}</big></strong> has confirmed the {{$details->title}} appointment on <strong>{{$details->start_date}}</strong> at <strong>{{$details->time}}</strong>.

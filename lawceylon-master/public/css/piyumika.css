@@ -1,0 +1,539 @@
+.pbody {
+  /*font-family: 'Nunito', sans-serif;*/
+  color: #616970;
+}
+
+.pform {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 10px 20px;
+  background: #dde2e2;
+  border-radius: 5px;
+}
+
+.ph1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  color:#008000;
+}
+
+input[type="ptext"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="ptel"],
+input[type="file"],
+textarea,
+select {
+  color: rgb(27, 34, 26);
+  font-size: 16px;
+  height: auto;
+  padding: 5px;
+  width: 70%;
+  background-color: #eff8f4;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+
+}
+
+input[type="pradio"],
+input[type="pcheckbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+.pbutton{
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #00a651;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 50%;
+  /*border: 1px solid #000;*/
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(207, 178, 178, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.plabel {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.plabel.light {
+  font-weight: 10;
+  display: inline;
+}
+
+.number {
+  background-color: #32CD32;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  .pform {
+    max-width: 800px;
+  }
+
+}
+/*alert frame and alert color*/
+.palert {
+    padding: 20px;
+    background-color: #FFFF;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-variant-position: center;
+}
+.palert.info {background-color: rgb(33, 6, 107);}
+
+
+/*validation*/
+input[type="ptext"]:valid + span::after {
+content: "✔";
+color: rgb(9, 117, 36);
+background-color: rgb(212, 231, 212);
+
+}
+
+/* Unmatched */
+input[type="ptext"]:invalid + span::after{
+content:"\2716";
+background: rgb(247, 244, 244);
+  color: rgb(201, 16, 16);
+}
+
+input[type="email"]:invalid +span::after{
+content:"\2716";
+background: rgb(247, 244, 244);
+color: rgb(201, 16, 16);
+}
+input[type="email"]:valid+span::after{
+content: "✔";
+color: rgb(9, 117, 36);
+background-color: rgb(212, 231, 212);
+}
+input[type="pnumber"]:invalid +span::after{
+content:"\2716";
+background: rgb(247, 244, 244);
+color: rgb(201, 16, 16);
+}
+input[type="ptel"]:invalid +span::after{
+content:"\2716";
+background: rgb(247, 244, 244);
+color: rgb(201, 16, 16);
+}
+input[type="pnumber"]:valid+span::after{
+content: "✔";
+color: rgb(9, 117, 36);
+background-color: rgb(212, 231, 212);
+}
+
+input[type="ptel"]:valid+span::after{
+content: "✔";
+color: rgb(9, 117, 36);
+background-color: rgb(212, 231, 212);
+}
+#message {
+display:none;
+background: #f1f1f1;
+color: #000;
+position: relative;
+padding: 20px;
+margin-top: 10px;
+}
+
+#message p {
+padding: 10px 35px;
+font-size: 18px;
+}
+.valid {
+color: green;
+}
+
+.valid:before {
+position: relative;
+left: -35px;
+content: "✔";
+}
+.invalid {
+color: red;
+}
+
+.invalid:before {
+position: relative;
+left: -35px;
+content: "✖";
+}
+
+
+
+
+/*for lawyer edit profile form*/
+
+
+
+.ebody{
+background:#f5f5f5;
+}
+/**
+* Panels
+*/
+/*** General styles ***/
+.panel {
+box-shadow: none;
+}
+.panel-heading {
+border-bottom: 0;
+}
+.panel-title {
+font-size: 17px;
+}
+.panel-title > small {
+font-size: .75em;
+color: #999999;
+}
+.panel-body *:first-child {
+margin-top: 0;
+}
+.panel-footer {
+border-top: 0;
+}
+
+.panel-default > .panel-heading {
+color: #333333;
+background-color: transparent;
+border-color: rgba(0, 0, 0, 0.07);
+}
+
+.eform label {
+color: #706d6d;
+font-weight: 400;
+max-width: 1000px;
+}
+
+.form-horizontal .form-group {
+margin-left: -15px;
+margin-right: -15px;
+}
+@media (min-width: 768px) {
+.form-horizontal .control-label {
+
+margin-bottom: 0;
+padding-top: 7px;
+
+}
+}
+
+.profile__contact-info-icon {
+float: left;
+font-size: 18px;
+color: #999999;
+}
+.profile__contact-info-body {
+overflow: hidden;
+padding-left: 20px;
+color: #999999;
+}
+
+.eform {
+max-width: 1000px;
+margin: 0px auto;
+padding: 10px 20px;
+background: #ecf1f1;
+border-radius: 5px;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 20%;
+}
+.p2button {
+padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #1E90FF;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  /*border: 1px solid #000;*/
+  border-width: 1px 1px 3px;
+  /*box-shadow: 0 -1px 0 rgba(207, 178, 178, 0.1) inset;*/
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+/*display: inline-block;*/
+}
+
+
+
+/*useView Lawyer profile css*/
+#ex4 .p1[data-count]:after{
+position:absolute;
+right:10%;
+top:8%;
+content: attr(data-count);
+font-size:40%;
+padding:.2em;
+border-radius:50%;
+line-height:1em;
+color: white;
+background:rgba(255,0,0,.85);
+text-align:center;
+min-width: 1em;
+
+}
+
+
+
+/*lawyer view lawyer profile*/
+
+.lbody{
+background: -webkit-linear-gradient(left, #000000, #B0C4DE);
+}
+.lemp-profile{
+padding: 3%;
+margin-top: 1%;
+margin-bottom: 1%;
+border-radius: 0rem;
+background: #fff;
+}
+/*.profile-img{
+text-align: center;
+}*/
+
+.profile-img img{
+width: 70%;
+height: 28%;
+}
+.profile-img .file {
+position: relative;
+overflow: hidden;
+margin-top: -20%;
+width: 70%;
+border: none;
+border-radius: 0;
+font-size: 15px;
+background: #212529b8;
+}
+.profile-img .file input {
+position:absolute;
+opacity: 0;
+right: 0;
+top: 0;
+}
+.profile-head h3{
+color: #333;
+}
+.profile-head h6{
+color: #0062cc;
+}
+.profile-edit-btn{
+border: none;
+border-radius: 1.5rem;
+width: 70%;
+padding: 2%;
+font-weight: 600;
+color: #6c757d;
+cursor: pointer;
+}
+
+
+.profile-work{
+
+margin-top: -15%;
+}
+.profile-work p{
+font-size: 12px;
+color: #818182;
+font-weight: 600;
+margin-top: 10%;
+}
+.profile-work a{
+text-decoration: none;
+color: #495057;
+font-weight: 600;
+font-size: 14px;
+}
+.profile-work ul{
+list-style: none;
+}
+.profile-tab label{
+font-weight: 600;
+}
+.profile-tab p{
+font-weight: 600;
+color: #0062cc;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+right: 0;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+left: 25px;
+font-size: 36px;
+margin-right: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.profile-img .button {
+position: relative;
+overflow: hidden;
+margin-top: -20%;
+width: 70%;
+border: none;
+border-radius: 0;
+font-size: 15px;
+background: #212529b8;
+}
+
+
+
+/*popup login*/
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+background-color: #555;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+opacity: 0.8;
+position: fixed;
+bottom: 23px;
+right: 28px;
+width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 15px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 1;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: mediumpurple;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+
+/*client view client profile*/
+.cbody{
+background: -webkit-linear-gradient(left, #ff7f50, #deb887);
+}
+.cw3-container, .w3-panel {
+
+height:800px;
+text-align:left
+}
+
+/*alert*/
+.calert {
+    padding: 20px;
+    background-color: rgb(168, 5, 5);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+    font-size: 15px;
+    width:100%;
+    font-variant-position: center;
+}
